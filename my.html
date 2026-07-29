@@ -1,4 +1,45 @@
 <!DOCTYPE html>
-<h1>
-    HELLO
-</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Web Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero__content">
+            <h1>Welcome to My Simple Web Project</h1>
+            <p>A minimal interactive page built from your file. Add tasks, mark them done, and clear the list.</p>
+            <a class="button" href="#todo">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="todo" class="card">
+            <h2>Todo List</h2>
+            <p>Type an item and press Add to keep track of your tasks.</p>
+            <form id="todo-form">
+                <input id="todo-input" type="text" placeholder="Add a new task" aria-label="New task">
+                <button type="submit">Add</button>
+            </form>
+            <ul id="todo-list"></ul>
+            <div class="actions">
+                <button id="clear-button" class="secondary">Clear Completed</button>
+                <button id="reset-button" class="secondary">Reset List</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>About</h2>
+            <p>This small web project demonstrates HTML structure, CSS styling, and JavaScript behavior. It keeps the interface simple and easy to extend.</p>
+        </section>
+    </main>
+    <section>
+    <footer>
+        <p>Built with JavaScript, HTML, and CSS.</p>
+    </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

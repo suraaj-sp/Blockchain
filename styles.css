@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter, system-ui, sans-serif;
+    line-height: 1.6;
+    background: radial-gradient(circle at top, #f7f1ff 0%, #f0f5ff 45%, #eef7fa 100%);
+    color: #1d2028;
+    min-height: 100vh;
+}
+
+.hero {
+    padding: 4rem 1.5rem 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, #6b4cff 0%, #3d8dff 100%);
+    color: white;
+}
+
+.hero__content {
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.05rem;
+    opacity: 0.92;
+    margin-bottom: 1.75rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.18);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background: rgba(255,255,255,0.28);
+    transform: translateY(-1px);
+}
+
+main {
+    padding: 2rem 1.5rem 3rem;
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 24px 70px rgba(28, 22, 78, 0.08);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.55rem;
+}
+
+.card p {
+    color: #51565d;
+    margin-bottom: 1.25rem;
+}
+
+#todo-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+#todo-input {
+    width: 100%;
+    padding: 1rem 1.1rem;
+    border-radius: 14px;
+    border: 1px solid #dbe3f0;
+    font-size: 1rem;
+}
+
+#todo-form button,
+.actions button {
+    border: none;
+    border-radius: 14px;
+    padding: 1rem 1.2rem;
+    background: #4e5cff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#todo-form button:hover,
+.actions button:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+#todo-list {
+    list-style: none;
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.95rem 1rem;
+    border-radius: 14px;
+    border: 1px solid #eef1f8;
+    margin-bottom: 0.75rem;
+    background: #fbfbff;
+}
+
+#todo-list li.completed {
+    opacity: 0.72;
+    text-decoration: line-through;
+}
+
+.todo-text {
+    flex: 1;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.todo-actions button {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.95rem;
+    background: #edf2ff;
+    color: #2c3a6b;
+}
+
+.todo-actions button:hover {
+    background: #dbe3ff;
+}
+
+.actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.secondary {
+    background: #f2f5ff;
+    color: #3d4d7d;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 1.5rem 2rem;
+    color: #6b7280;
+}
+
+@media (max-width: 600px) {
+    #todo-form {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 3rem 1rem 2rem;
+    }
+}

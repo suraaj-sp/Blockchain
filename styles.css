@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
     background: radial-gradient(circle at top, #f7f1ff 0%, #f0f5ff 45%, #eef7fa 100%);
     color: #1d2028;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 .hero {
